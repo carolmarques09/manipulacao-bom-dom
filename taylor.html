@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alterar conteúdo da div!!</title>
+    <title>Lista Dinâmica</title>
+    <style>
+        #meuDiv {
+            padding: 20px;
+            background-color: lightblue;
+            border: 1px solid #000;
+            width: 200px;
+            text-align: center;
+        }
+        button {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Adicionar itens à lista: </h1>
+    <input type="text" id="itemInput" placeholder="Digite um item">
+    <button id="addItemButton">Adicionar item</button>
+
+    <ul id="itemList"></ul>
+
+    <script src="script.js"></script>
+
+    <script>
+        alert("Bem-vindo à atividade de manipulação de DOM e BOM!");
+        console.log("Página carregada com sucesso!");
+    </script>
+
+    <div id="meuDiv">Conteúdo original</div>
+    <button id="meuBotao">Alterar conteúdo</button>
+    <script>
+        const botao = document.getElementById("meuBotao");
+        const div = document.getElementById("meuDiv");
+        botao.addEventListener("click", function() {
+            div.textContent = "Conteúdo da div alterado!"
+        });
+    </script>
+    <script src="bomdom.js">
+    </script>
+    <script>
+        var imagem = document.getElementById('minhaImagem');
+        imagem.setAttribute('title', 'Imagem dinâmica');
+    </script>
+    <div id="meuDiv">
+        <p>I used to think one day we'd tell the story of us
+            How we met and the sparks flew instantly
+            And people would say, "They're the lucky ones"</p>
+            <button onclick="estilizarTexto">Estilizar Texto</button>
+        <title>Imagem dinâmica</title>
+        <img id="minhaImagem" src="taylorswift.avif" alt="taylor swift">
+    </div>
+</body>
+</html>
